@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Users</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        a { display: block; text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Registered User Details</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Full Name</td><td id="fullname"></td></tr>
+            <tr><td>Sex</td><td id="sex"></td></tr>
+            <tr><td>Date of Birth</td><td id="dob"></td></tr>
+            <tr><td>Email</td><td id="email"></td></tr>
+            <tr><td>County</td><td id="county"></td></tr>
+            <tr><td>Telephone</td><td id="telephone"></td></tr>
+            <tr><td>Courses</td><td id="courses"></td></tr>
+        </tbody>
+    </table>
+    <a href="index.html">Go Back to Sign-Up</a>
+
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+
+            document.getElementById("fullname").textContent = params.get("fullname") || "N/A";
+            document.getElementById("sex").textContent = params.get("sex") || "N/A";
+            document.getElementById("dob").textContent = params.get("dob") || "N/A";
+            document.getElementById("email").textContent = params.get("email") || "N/A";
+            document.getElementById("county").textContent = params.get("county") || "N/A";
+            document.getElementById("telephone").textContent = params.get("telephone") || "N/A";
+
+            let courses = params.getAll("courses");
+            document.getElementById("courses").textContent = courses.length ? courses.join(", ") : "None";
+        };
+    </script>
+</body>
+</html>
