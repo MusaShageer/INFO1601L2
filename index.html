@@ -1,93 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up Form</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 10px; }
-        form { max-width: 600px; margin: auto; }
-        fieldset { margin-bottom: 15px; }
-        input, select, button { display: block; width: 20%; margin: 8px 0; padding: 8px; }
-        a { display: block; text-align: center; margin-top: 10px; }
-    </style>
-</head>
-<body>
-    <h2>Sign Up</h2>
-    <form action="display.html" method="GET">
-        <fieldset>
-            <legend>Demographic Info</legend>
-            <label>
-                Full Name
-                <input type="text" placeholder="Enter your name" name="fullname" required />
-            </label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=" />
+    <title>Home</title>
+  </head>
+  <body>
+    
+    <nav>
+     
+      <a href="index.html"><b>Index</b></a>
+      <a href="/pages/signup.html"><b>Sign UP</b></a>
+      <h1>Home</h1>
+    </nav>
 
-            <label>
-                Sex
-                <select name="sex" required>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-            </label>
+        <table border = "solid">
+            <thead>
+            <th>Item</th><th>Qty</th><th>Price</th><th>Total</th>
+            </thead>
+            <tbody>
+            <tr>
+                    <td>Milk</td><td>2</td><td>$8.00</td><td>$16.00</td>
+            </tr>
+            <tr>
+                    <td>Eggs Pack</td><td>1</td><td>$6.00</td><td>$6.00</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                    <td>Total</td><td></td><td></td><td>$22.00</td>                          </tr>
+            </tfoot>
+    </table>                       
 
-            <label for="dob">Date of Birth</label>
-            <input type="date" name="dob" value="2000-01-01" required />
-        </fieldset>
-
-        <fieldset>
-            <legend>Contact Info</legend>
-            <label>
-                Email
-                <input type="email" name="email" required />
-            </label>
-
-            <label>
-                County
-                <input list="counties" name="county" required />
-                <datalist id="counties">
-                    <option value="Caroni"></option>
-                    <option value="Mayaro"></option>
-                    <option value="Nariva"></option>
-                    <option value="Saint Andrew"></option>
-                    <option value="Saint David"></option>
-                    <option value="Saint George"></option>
-                    <option value="Saint Patrick"></option>
-                    <option value="Victoria"></option>
-                </datalist>
-            </label>
-
-            <label>
-                Telephone
-                <input type="tel" name="telephone" required />
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Courses</legend>
-            <label>
-                <input type="checkbox" name="courses" value="info1601" checked />
-                <span>INFO 1601</span>
-            </label>
-
-            <label>
-                <input type="checkbox" name="courses" value="comp1602" />
-                <span>COMP 1602</span>
-            </label>
-
-            <label>
-                <input type="checkbox" name="courses" value="comp1603" />
-                <span>COMP 1603</span>
-            </label>
-
-            <label>
-                <input type="checkbox" name="courses" value="comp1604" />
-                <span>COMP 1604</span>
-            </label>
-        </fieldset>
-
-        <input type="submit" value="Sign Up" />
-    </form>
-    <a href="display.html">View Registered Users</a>
-</body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eVli-tstM5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <script src="script.js"></script>
+  </body>
 </html>
+

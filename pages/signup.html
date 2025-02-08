@@ -1,6 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      body{
+        text-align: center;
+        background-color: beige;
+      }
+
+      nav a{
+        color: midnightblue;
+        font-size: 18px;
+
+
+      }
+
+      form{
+        background-color: beige;
+        text-align: center;
+
+      }
+
+      fieldset{
+        border: #333;
+        text-align: center;
+
+      }
+
+      legend{
+        font-weight: bold;
+        color: #333;
+      }
+
+      label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+      option{
+        background-color: blue;
+        color: black;
+        border-radius: 30px;
+        height: 1cm;
+        width: 10cm;
+      }
+
+      
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=" />
     <title>Sign Up</title>
@@ -8,7 +54,7 @@
   <body>
     <nav>
       <a href="../index.html">Home</a>
-      <a href="./pages/signup.html"><b>Sign Up</b></a>
+      
     </nav>
 
     <h1>Sign Up Form</h1>
@@ -29,7 +75,6 @@
             <select name="sex">
               <option value="1">male</option>
               <option value="2">female</option>
-              <option value="3">other</option>
             </select>
           </label>
       
@@ -48,23 +93,24 @@
       
           <label>
             Email
-            <input type="email" name="email" />
+            <input type="email" name="email" placeholder="Please enter email address" />
           </label>
       
           <br />
       
           <label>
             County
-            <input list="counties" name="county" />
-            <datalist id="counties">
-              <option value="Caroni"></option>
-              <option value="Mayaro"></option>
-              <option value="Nariva"></option>
-              <option value="Saint Andrew"></option>
-              <option value="Saint David"></option>
-              <option value="Saint George"></option>
-              <option value="Saint Patrick"></option>
-              <option value="Victoria"></option>
+            <input list="countries" name="country" placeholder="Please enter your country of origin" />
+            <datalist id="countries">
+              <option value="Trinidad and Tobago"></option>
+              <option value="Canada"></option>
+              <option value="United States of America"></option>
+              <option value="Brazil"></option>
+              <option value="Russia"></option>
+              <option value="China"></option>
+              <option value="South Africa"></option>
+              <option value="Ireland"></option>
+              <option value="Germany"></option>
             </datalist>
           </label>
       
@@ -72,7 +118,7 @@
       
           <label>
             Telephone
-            <input type="tel" name="telephone" />
+            <input type="tel" name="telephone" placeholder="Enter your Phone Number" />
           </label>
         </fieldset>
       
@@ -106,3 +152,6 @@
       </form>
   </body>
 </html>
+
+
+ 
